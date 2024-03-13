@@ -5,10 +5,10 @@ export default function Page() {
   return (
     <main>
       <article className="max-w-4xl mx-auto px-4 md:px-0">
-        <div className="text-center md:text-xl pt-12 md:pt-0 lg:pt-12 mb-8">
-          <p className="text-xl md:text-4xl lg:text-5xl text-green-500 font-bold">
+        <div className="text-center md:text-2xl pt-12 md:pt-0 lg:pt-12 mb-8">
+          <h1 className="text-2xl md:text-4xl  text-green-500 font-bold">
             Amazing Crime App
-          </p>
+          </h1>
         </div>
         <Intro />
         <Context />
