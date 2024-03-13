@@ -18,15 +18,18 @@ const developers = [
 
 const Footer = () => {
   return (
-    <div className="grid grid-cols-4 gap-2 mt-5">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5">
       {developers.map((developer) => (
-        <div key={developer.id} className="border p-4 rounded-md">
+        <div key={developer.id} className="flex border p-4 rounded-md">
           <img
             src={developer.imageUrl}
             alt={developer.name}
-            className="mx-auto mb-2 rounded-full"
+            className="w-16 h-16 rounded-full mr-4"
           />
-          <p className="text-center font-semibold">{developer.name}</p>
+          <div>
+            <p className="font-semibold">{developer.name}</p>
+            <p className="text-sm">{/* Add developer details here */}</p>
+          </div>
         </div>
       ))}
     </div>
