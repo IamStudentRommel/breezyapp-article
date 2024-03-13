@@ -18,7 +18,7 @@ const developers = [
 const handleDeveloperClick = (developer) => {
   console.log(developer.name);
   if (developer.name === "Rommel Hipos") {
-    window.open("https:syntaxmelworks.com", "_blank");
+    window.open("https://syntaxmelworks.com", "_blank");
   }
 };
 
