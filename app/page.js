@@ -4,13 +4,12 @@ import Design from "./introduction/design";
 export default function Page() {
   return (
     <main>
-      <div className="text-center md:text-xl pt-56 md:pt-12">
-        <p className="text-lg md:text-4xl text-green-500 font-bold">
-          Amazing Crime App
-        </p>
-      </div>
-
-      <article className="max-w-4xl mx-auto mt-8 px-4 md:px-0">
+      <article className="max-w-4xl mx-auto px-4 md:px-0">
+        <div className="text-center md:text-xl pt-12 md:pt-0 lg:pt-12 mb-8">
+          <p className="text-xl md:text-4xl lg:text-5xl text-green-500 font-bold">
+            Amazing Crime App
+          </p>
+        </div>
         <Intro />
         <Context />
         <Design />
