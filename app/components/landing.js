@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Article from "./overview";
 import Designs from "./design";
 import Architecture from "./architecture";
@@ -15,6 +15,47 @@ const NavItem = ({ label, selected, onClick }) => {
     >
       {label}
     </a>
+  );
+};
+
+const ArrowUpButton = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Function to scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scrolling
+    });
+  };
+
+  // Function to handle scroll event and toggle visibility of the button
+  const handleScroll = () => {
+    if (window.scrollY > 300) {
+      // Adjust this value based on your needs
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  // Add scroll event listener when component mounts
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <button
+      onClick={scrollToTop}
+      className={`fixed bottom-4 right-4 p-3 bg-green-500 text-white rounded-full w-10 h-10 ${
+        isVisible ? "block" : "hidden"
+      } flex justify-center items-center`}
+    >
+      <i className="fas fa-arrow-up"></i>
+    </button>
   );
 };
 
@@ -37,7 +78,6 @@ const Navigation = () => {
         return <Architecture />;
     }
   };
-
   return (
     <nav className="bg-black-500 p-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -67,6 +107,7 @@ const Navigation = () => {
       </div>
       {/* Render content based on the selected item */}
       {renderContent()}
+      <ArrowUpButton />
     </nav>
   );
 };
