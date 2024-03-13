@@ -1,6 +1,7 @@
 import Intro from "../subcomponents/intro";
 import Context from "../subcomponents/context";
 import Title from "../subcomponents/title";
+import Footer from "../subcomponents/footer";
 export default function Page() {
   return (
     <main>
@@ -42,6 +43,10 @@ export default function Page() {
           members to collaborate in combating crime and creating safer
           neighborhoods.
         </p>
+        <h2 className="text-xl md:text-2xl font-bold mb-2">Developers</h2>
+        <div className="flex justify-center">
+          <Footer />
+        </div>
       </article>
     </main>
   );
