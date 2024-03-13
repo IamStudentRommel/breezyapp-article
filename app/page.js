@@ -2,7 +2,7 @@ import Landing from "./components/landing";
 
 const Navigation = () => {
   return (
-    <main>
+    <main className="bg-black text-white">
       <Landing />
     </main>
   );

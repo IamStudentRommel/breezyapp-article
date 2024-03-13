@@ -33,7 +33,7 @@ const Navigation = () => {
         return <Article />;
       case "Designs":
         return <Designs />;
-      default:
+      case "Architecture":
         return <Architecture />;
     }
   };
