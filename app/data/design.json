@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Figure 1: Login Page",
+    "src": "/assets/login.png",
+    "description": "Upon entering the app, users are presented with the login page. From here, they can login, create an account, or continue as guests. If users have created an account but have forgotten the password, they will have the option to go through the password recovery process via the “Forgot Password?” link."
+  },
+  {
+    "title": "Figure 2: Landing Page",
+    "src": "/assets/landing.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "title": "Figure 3: Drawer Menu",
+    "src": "/assets/drawer.png",
+    "description": "When the user clicks on the drawer menu from any of the app’s pages, they will be presented with the menu. This menu will provide them with navigation to the login, dashboard, live monitoring, and about pages."
+  },
+  {
+    "title": "Figure 4: Crime Live Monitoring & Reporting",
+    "src": "/assets/crime_reporting.png",
+    "description": "When the user clicks on the “+” button from the landing page, they will be prompted with the crime reporting feature. This page will let the user enter their location, select which category the crime belongs to, and describe it."
+  },
+  {
+    "title": "Figure 5: Dashboard",
+    "src": "/assets/dashboard.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "title": "Figure 6: About",
+    "src": "/assets/about.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }
+]
