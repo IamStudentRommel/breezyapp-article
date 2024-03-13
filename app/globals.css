@@ -8,3 +8,31 @@
     text-wrap: balance;
   }
 }
+.developer-container {
+  perspective: 1000px;
+}
+
+.flipper {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.developer-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}

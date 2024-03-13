@@ -19,6 +19,8 @@ const handleDeveloperClick = (developer) => {
   console.log(developer.name);
   if (developer.name === "Rommel Hipos") {
     window.open("https://syntaxmelworks.com", "_blank");
+  } else {
+    alert("Profile not yet shared");
   }
 };
 
