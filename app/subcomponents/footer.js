@@ -40,7 +40,7 @@ const Footer = () => {
             />
             <div>
               {hoveredDeveloper === developer ? (
-                <a className="font-semibold text-blue-500 italic hover:underline">
+                <a className="font-semibold text-blue-700 italic hover:underline">
                   View Profile
                 </a>
               ) : (
