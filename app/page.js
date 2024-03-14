@@ -65,7 +65,19 @@ const ArrowUpButton = () => {
 
 const Page = () => {
   const router = useRouter();
-  const [initialSelectedItem, setInitialSelectedItem] = useState("Overview");
+
+  const [initialSelectedItem, setInitialSelectedItem] = useState("overview");
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const pageParam = params.get("page");
+    console.log(pageParam);
+    if (pageParam === null) {
+      setInitialSelectedItem("overview");
+    } else {
+      setInitialSelectedItem(pageParam);
+    }
+  }, []);
 
   const handleItemClick = (item) => {
     // console.log("Clicked item:", item);
@@ -76,11 +88,11 @@ const Page = () => {
   const renderContent = () => {
     // console.log("Rendering content for item:", initialSelectedItem);
     switch (initialSelectedItem) {
-      case "Overview":
+      case "overview":
         return <Article />;
-      case "Designs":
+      case "designs":
         return <Designs />;
-      case "Architecture":
+      case "architecture":
         return <Architecture />;
       default:
         return null;
@@ -96,20 +108,20 @@ const Page = () => {
           <div className="flex justify-center space-x-4">
             <NavItem
               label="Overview"
-              selected={initialSelectedItem === "Overview"}
-              onClick={() => handleItemClick("Overview")}
+              selected={initialSelectedItem === "overview"}
+              onClick={() => handleItemClick("overview")}
               href="/?page=overview"
             />
             <NavItem
               label="Designs"
-              selected={initialSelectedItem === "Designs"}
-              onClick={() => handleItemClick("Designs")}
+              selected={initialSelectedItem === "designs"}
+              onClick={() => handleItemClick("designs")}
               href="/?page=designs"
             />
             <NavItem
               label="Architecture"
-              selected={initialSelectedItem === "Architecture"}
-              onClick={() => handleItemClick("Architecture")}
+              selected={initialSelectedItem === "architecture"}
+              onClick={() => handleItemClick("architecture")}
               href="/?page=architecture"
             />
           </div>
