@@ -26,6 +26,7 @@ const Footer = () => {
         <div
           key={developer.id}
           className="developer-container transform transition-transform hover:-translate-y-1 shadow-md hover:shadow-lg"
+          onClick={() => handleDeveloperClick(developer)}
           onMouseEnter={() => handleMouseEnter(developer)}
           onMouseLeave={handleMouseLeave}
         >
@@ -39,10 +40,7 @@ const Footer = () => {
             />
             <div>
               {hoveredDeveloper === developer ? (
-                <a
-                  href="#" // Replace "#" with the actual link
-                  className="font-semibold text-blue-500 italic hover:underline"
-                >
+                <a className="font-semibold text-blue-500 italic hover:underline">
                   View Profile
                 </a>
               ) : (
