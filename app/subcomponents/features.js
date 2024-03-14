@@ -1,7 +1,9 @@
 export default function Features() {
   return (
     <main>
-      <h2 className="text-2xl md:text-2xl font-bold mb-4">Key Features</h2>
+      <h2 className="text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4 mb-2">
+        Key Features
+      </h2>
       <ul className="list-disc pl-4 mb-4">
         <li className="text-md">Real-time incident tracking</li>
         <li className="text-md">Interactive crime maps</li>
@@ -10,7 +12,9 @@ export default function Features() {
         <li className="text-md">Integration with law enforcement databases</li>
       </ul>
 
-      <h2 className="text-xl md:text-2xl font-bold mb-2">How It Works</h2>
+      <h2 className="text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4">
+        How It Works
+      </h2>
       <p className="text-md mb-4">
         The Amazing Crime App utilizes advanced algorithms and geospatial
         analysis techniques to collect and analyze data from various sources,

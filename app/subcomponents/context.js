@@ -1,7 +1,9 @@
 export default function Context() {
   return (
     <main>
-      <h1 className="text-2xl md:text-2xl font-bold mb-4">Context</h1>
+      <h2 className="text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4 mb-2">
+        Context
+      </h2>
       <p className="text-md mb-4">
         As we develop the Crime Alert App, one critical component is the
         integration of GPS functionality. The ability to accurately determine a

@@ -11,7 +11,7 @@ export default function Page() {
         <Intro />
         <Context />
         <Features />
-        <h2 className="text-xl md:text-2xl font-bold mb-2">Developers</h2>
+
         <div className="flex justify-center">
           <Footer />
         </div>
