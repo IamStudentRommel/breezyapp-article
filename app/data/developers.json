@@ -1,0 +1,18 @@
+[
+  { "id": 1, "name": "Rommel Hipos", "imageUrl": "/assets/mel.png" },
+  {
+    "id": 2,
+    "name": "Romeo Costillas",
+    "imageUrl": "/assets/romeo.png"
+  },
+  {
+    "id": 3,
+    "name": "Ko Kawaguchi",
+    "imageUrl": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 4,
+    "name": "Aivee Madrelejos",
+    "imageUrl": "/assets/aivee.png"
+  }
+]
