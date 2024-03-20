@@ -115,7 +115,7 @@ const Page = () => {
             <img src="/assets/crimehate.png" alt="Logo" className="h-0" />
           </div> */}
           {/* Burger menu icon for mobile */}
-          <div className="flex items-center">
+          <div className="flex items-center mb-10">
             <div className="block md:hidden">
               <button
                 onClick={toggleMenu}
