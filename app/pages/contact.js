@@ -84,10 +84,11 @@ const Contact = () => {
               className="max-w-3xl sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-2xl text-left"
             >
               <p className="font-general-medium text-primary-dark dark:text-primary-light text-xl mb-8 text-center italic">
-                "We value your feedback greatly as it helps us improve our
+                &quot;We value your feedback greatly as it helps us improve our
                 application further. Thank you for taking the time to share your
-                thoughts with us!"
+                thoughts with us!&quot;
               </p>
+
               <FormInput
                 inputLabel="Full Name"
                 labelFor="name"
