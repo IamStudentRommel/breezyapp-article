@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Article from "./pages/overview";
 import Designs from "./pages/design";
 import Architecture from "./pages/architecture";
+import Contact from "./pages/contact";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -94,6 +95,8 @@ const Page = () => {
         return <Designs />;
       case "architecture":
         return <Architecture />;
+      case "contact":
+        return <Contact />;
       default:
         return null;
     }
@@ -123,6 +126,12 @@ const Page = () => {
               selected={initialSelectedItem === "architecture"}
               onClick={() => handleItemClick("architecture")}
               href="/?page=architecture"
+            />
+            <NavItem
+              label="Contact"
+              selected={initialSelectedItem === "contact"}
+              onClick={() => handleItemClick("contact")}
+              href="/?page=contact"
             />
           </div>
           <div>
