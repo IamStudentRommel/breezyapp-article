@@ -1,7 +1,6 @@
 export default function Intro() {
   return (
     <main>
-      {/* <h1 className="text-2xl md:text-2xl font-bold mb-4">Introduction</h1> */}
       <h2 className="text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4 mb-2">
         Introduction
       </h2>

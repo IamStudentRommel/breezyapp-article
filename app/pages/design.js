@@ -5,7 +5,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-import Title from "../subcomponents/title";
+import Title from "../components/title";
 import imagesData from "../data/design.json";
 
 export default function Design() {
@@ -23,12 +23,12 @@ export default function Design() {
     );
   };
   return (
-    <main>
+    <main className="fade-in opacity-0">
       <Title />
       <div className="max-w-4xl mx-auto px-4 md:px-0 mt-5">
         {/* <h1 className="text-2xl md:text-2xl font-bold mb-4 ">Design Concept</h1> */}
-        <h2 className="text-center text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4">
-          {imagesData[currentSlide].title}
+        <h2 className="text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4">
+          Mobile Application
         </h2>
         <div className="max-w-md mx-auto">
           <div className="relative">
@@ -52,6 +52,9 @@ export default function Design() {
               </button>
             </div>
           </div>
+        </div>
+        <div className="text-md mb-4 italic text-center">
+          {imagesData[currentSlide].title}
         </div>
         <div className="text-md mb-4 italic">
           {imagesData[currentSlide].description}
