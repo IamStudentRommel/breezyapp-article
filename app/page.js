@@ -73,7 +73,7 @@ const Page = () => {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const pageParam = params.get("page");
-    console.log(pageParam);
+    // console.log("shiteffect - ",pageParam);
     if (pageParam === null) {
       setInitialSelectedItem("overview");
     } else {

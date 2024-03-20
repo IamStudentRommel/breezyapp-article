@@ -25,7 +25,7 @@ export default function Design() {
   return (
     <main className="fade-in opacity-0">
       <Title />
-      <div className="max-w-4xl mx-auto px-4 md:px-0 mt-5">
+      <div className="max-w-4xl mx-auto px-4 md:px-0 mt-5 ">
         {/* <h1 className="text-2xl md:text-2xl font-bold mb-4 ">Design Concept</h1> */}
         <h2 className="text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4">
           Mobile Application
@@ -56,7 +56,7 @@ export default function Design() {
         <div className="text-md mb-4 italic text-center">
           {imagesData[currentSlide].title}
         </div>
-        <div className="text-md mb-4 italic">
+        <div className="text-md  italic ">
           {imagesData[currentSlide].description}
         </div>
       </div>

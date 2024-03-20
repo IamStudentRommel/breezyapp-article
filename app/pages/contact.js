@@ -17,8 +17,8 @@ const Contact = () => {
     setIsLoading(true);
     if (formData.message.length > 3) {
       try {
-        const bodyContent = `Full Name: ${formData.name}<br><br> ${formData.message}`;
         const subjContent = `Amazing Crime App - Article - ${formData.name}`;
+        const bodyContent = `${formData.message} <br><br> Thank you for taking the time to share your thoughts with us!<br> If you have any more inquiries, please don't hesitate to contact us again in our page: <a href="https://breezyapp-article.vercel.app/?page=contact">Amazing Crime App</a>`;
 
         //localhost:3000/api/send-email?from=test%40gmail.com&subject=Your%20Subject&text=Your%20Email%20Body
         const response = await fetch(
@@ -34,9 +34,8 @@ const Contact = () => {
             },
           }
         );
-
+        // console.log("shit");
         // console.log(response);
-
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -46,14 +45,14 @@ const Contact = () => {
 
         if (result.result === "Success") {
           alert("Thank you for reaching me, your inquiry sent successfully!");
-          window.location.reload(); // Reload the page
+          window.location.reload();
         } else {
           alert("Inquiry sending failed.");
         }
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
       } finally {
-        setIsLoading(false); // end loading
+        setIsLoading(false);
       }
     } else {
       alert("Please input your valid text message.");
