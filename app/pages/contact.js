@@ -134,7 +134,7 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <div className="font-general-medium w-40 px-4 py-2.5 text-white text-center font-medium tracking-wider bg-green-500 hover:bg-green-700 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
+              <div className="font-general-medium w-40 px-4 py-2.5 text-white text-center font-medium tracking-wider bg-green-500 hover:bg-green-700 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 mb-10 duration-500 mx-auto">
                 <BtnContact
                   title={isLoading ? "Sending..." : "Send Message"}
                   type="submit"

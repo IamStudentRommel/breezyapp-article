@@ -18,7 +18,7 @@ const FormInput = ({
         {inputLabel}
       </label>
       <input
-        className="w-full px-5 py-2 border border-gray-300 border-primary-dark border-opacity-50 text-black  bg-ternary-dark rounded-md shadow-sm text-md"
+        className="w-full px-3 py-2 border border-gray-300 border-primary-dark border-opacity-50 text-black  bg-ternary-dark rounded-md shadow-sm text-md"
         type={inputType}
         id={inputId}
         name={inputName}
