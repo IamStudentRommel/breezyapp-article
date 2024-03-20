@@ -115,14 +115,14 @@ const Page = () => {
             <img src="/assets/crimehate.png" alt="Logo" className="h-0" />
           </div> */}
           {/* Burger menu icon for mobile */}
-          <div className="flex items-center mb-n5">
+          <div className="flex items-center mb-[-10px]">
             <div className="block md:hidden">
               <button
                 onClick={toggleMenu}
                 className="text-white focus:outline-none"
               >
                 <svg
-                  className="w-6 h-6"
+                  className="w-8 h-8"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
