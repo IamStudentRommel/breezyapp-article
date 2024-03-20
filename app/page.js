@@ -112,7 +112,7 @@ const Page = () => {
       <nav className="bg-black-500 p-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Burger menu icon for mobile */}
-          <div className="flex items-center mb-[-40px]">
+          <div className="flex items-center mb-[-80px]">
             <div className="block md:hidden">
               <button
                 onClick={toggleMenu}
