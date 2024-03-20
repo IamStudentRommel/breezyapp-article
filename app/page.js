@@ -111,11 +111,8 @@ const Page = () => {
     <main className="bg-gradient-to-br from-black via-gray-700 to-black text-white">
       <nav className="bg-black-500 p-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          {/* <div>
-            <img src="/assets/crimehate.png" alt="Logo" className="h-0" />
-          </div> */}
           {/* Burger menu icon for mobile */}
-          <div className="flex items-center mb-[-10px]">
+          <div className="flex items-center mb-[-40px]">
             <div className="block md:hidden">
               <button
                 onClick={toggleMenu}
