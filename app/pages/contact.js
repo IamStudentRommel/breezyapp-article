@@ -3,7 +3,7 @@ import FormInput from "../components/forminput";
 import BtnContact from "../components/btnfeedback";
 import React, { useState } from "react";
 
-export default function contact() {
+const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -149,4 +149,6 @@ export default function contact() {
       </div>
     </main>
   );
-}
+};
+
+export default Contact;
