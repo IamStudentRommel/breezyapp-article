@@ -99,7 +99,7 @@ const Page = () => {
     }
   };
   return (
-    <main className="bg-black text-white">
+    <main className="bg-gradient-to-br from-black via-gray-900 to-black text-white">
       <nav className="bg-black-500 p-4">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div>
