@@ -18,9 +18,8 @@ export default function Features() {
       <p className="text-md mb-4">
         The Amazing Crime App utilizes advanced algorithms and geospatial
         analysis techniques to collect and analyze data from various sources,
-        including police reports, surveillance cameras, and user submissions.
-        Users can report incidents anonymously through the app, providing
-        crucial information to authorities.
+        through user submissions. Users can report incidents through the app by
+        providing crucial information to authorities.
       </p>
 
       <p className="text-md mb-4">
