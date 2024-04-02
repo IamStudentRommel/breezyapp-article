@@ -143,7 +143,7 @@ const Page = () => {
               href="/?page=overview"
             />
             <NavItem
-              label="Designs"
+              label="Design"
               selected={initialSelectedItem === "designs"}
               onClick={() => handleItemClick("designs")}
               href="/?page=designs"
@@ -177,7 +177,7 @@ const Page = () => {
               href="/?page=overview"
             />
             <NavItem
-              label="Designs"
+              label="Design"
               selected={initialSelectedItem === "designs"}
               onClick={() => handleItemClick("designs")}
               href="/?page=designs"

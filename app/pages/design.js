@@ -28,7 +28,7 @@ export default function Design() {
       <div className="max-w-4xl mx-auto px-4 md:px-0 mt-5 ">
         {/* <h1 className="text-2xl md:text-2xl font-bold mb-4 ">Design Concept</h1> */}
         <h2 className="text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4">
-          Mobile Application
+          Mobile Application (User Interface)
         </h2>
         <div className="max-w-md mx-auto">
           <div className="relative">
@@ -59,6 +59,32 @@ export default function Design() {
         <div className="text-md  italic ">
           {imagesData[currentSlide].description}
         </div>
+
+        <h2 className="text-xl mt-4 md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4">
+          Web Application (Detailed Report Viewer)
+        </h2>
+        <h2 className="text-2xl md:text-2xl mt-2 font-bold text-center">
+          Not yet done, still on progress..
+        </h2>
+        <br />
+        <h2 className="text-xl mt-4 md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4">
+          Backend (API)
+        </h2>
+        <p className="mt-2">
+          The Amazing Crime App API allows users to retrieve costimize crime
+          data using firebase.
+        </p>
+        <div>
+          <span class="mr-2">Here is the link for reference:</span>
+          <a
+            href="https://breezy-app-be.vercel.app/"
+            target="_blank"
+            class="text-blue-500 hover:text-blue-700"
+          >
+            Amazing Crime App - Backend
+          </a>
+        </div>
+        <br />
       </div>
     </main>
   );

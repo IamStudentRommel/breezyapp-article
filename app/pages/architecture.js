@@ -14,9 +14,10 @@ export default function architecture() {
             src="/assets/dep.png"
           />
         </div>
-        <h2 className="text-2xl md:text-2xl font-bold mb-4 text-center">
+        <h2 className="text-2xl md:text-2xl mt-2 font-bold text-center">
           Not yet done, still on progress..
         </h2>
+        <br />
       </div>
     </main>
   );
