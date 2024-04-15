@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Features() {
   return (
     <main>
@@ -35,6 +37,20 @@ export default function Features() {
         members to collaborate in combating crime and creating safer
         neighborhoods.
       </p>
+
+      <h2 className="text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4">
+        Technical Demonstration
+      </h2>
+      <div className="video-container flex justify-center">
+        <iframe
+          className="w-full h-auto md:h-120 lg:h-96"
+          src="https://www.youtube.com/embed/LJP5arf2HBA?si=HxaapJKKupAzwtP3"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          loading="lazy"
+        ></iframe>
+      </div>
     </main>
   );
 }
