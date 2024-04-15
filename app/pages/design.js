@@ -72,14 +72,16 @@ export default function Design() {
         </h2>
         <p className="mt-2">
           The Amazing Crime App API allows users to retrieve costimize crime
-          data using firebase.
+          data using firebase. Please select the link below for the
+          documentation reference:
         </p>
         <div>
-          <span class="mr-2">Here is the link for reference:</span>
+          {/* <span className="mr-2">Here is the documentation for reference:</span> */}
+          <br />
           <a
             href="https://breezy-app-be.vercel.app/"
             target="_blank"
-            class="text-blue-500 hover:text-blue-700"
+            className="text-blue-500 hover:text-blue-700 text-2xl"
           >
             Amazing Crime App - Backend
           </a>
