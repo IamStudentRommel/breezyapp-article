@@ -4,12 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
   faChevronRight,
+  faExpandAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import Title from "../components/title";
 import imagesData from "../data/design.json";
 
 export default function Design() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isEnlarged, setIsEnlarged] = useState(false);
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) =>
@@ -22,21 +24,34 @@ export default function Design() {
       prevSlide === 0 ? imagesData.length - 1 : prevSlide - 1
     );
   };
+  const toggleEnlarged = () => {
+    // console.log("hey");
+    setIsEnlarged(!isEnlarged);
+  };
   return (
     <main className="fade-in opacity-0">
       <Title />
       <div className="max-w-4xl mx-auto px-4 md:px-0 mt-5 ">
-        {/* <h1 className="text-2xl md:text-2xl font-bold mb-4 ">Design Concept</h1> */}
         <h2 className="text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4">
           Mobile Application (User Interface)
         </h2>
         <div className="max-w-md mx-auto">
           <div className="relative">
             <img
-              className="max-h-96 h-auto w-auto mx-auto block mb-5 mt-5"
+              className={`max-h-96 h-auto w-auto mx-auto block mb-5 mt-5 rounded-2xl ${
+                isEnlarged ? "max-h-full" : ""
+              }`}
               src={imagesData[currentSlide].src}
               alt={imagesData[currentSlide].description}
             />
+            <div className="absolute top-0 right-0 z-10">
+              <button
+                className="bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full focus:outline-none"
+                onClick={toggleEnlarged}
+              >
+                <FontAwesomeIcon icon={faExpandAlt} />
+              </button>
+            </div>
             <div className="absolute inset-0 flex items-center justify-between">
               <button
                 className="bg-gray-800 bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full focus:outline-none"

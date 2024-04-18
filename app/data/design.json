@@ -1,32 +1,32 @@
 [
   {
     "title": "Figure 1: Login Page",
-    "src": "/assets/login.png",
+    "src": "/assets/app/login.png",
     "description": "Upon entering the app, users are presented with the login page. From here, they can login, create an account, or continue as guests. If users have created an account but have forgotten the password, they will have the option to go through the password recovery process via the “Forgot Password?” link."
   },
   {
     "title": "Figure 2: Landing Page",
-    "src": "/assets/landing.png",
+    "src": "/assets/app/landing.png",
     "description": "The landing page serves as a gateway for users to discover and engage with stories related to recent crimes and trending information, providing valuable insights and fostering community awareness and safety."
   },
   {
     "title": "Figure 3: Drawer Menu",
-    "src": "/assets/drawer.png",
+    "src": "/assets/app/drawer.png",
     "description": "When the user clicks on the drawer menu from any of the app’s pages, they will be presented with the menu. This menu will provide them with navigation to the login, dashboard, live monitoring, and about pages."
   },
   {
     "title": "Figure 4: Live Crime Monitoring & Reporting",
-    "src": "/assets/crime_reporting.png",
+    "src": "/assets/app/crime_reporting.png",
     "description": "When the user clicks on the “+” button from the landing page, they will be prompted with the crime reporting feature. This page will let the user enter their location, select which category the crime belongs to, and describe it."
   },
   {
     "title": "Figure 5: Dashboard",
-    "src": "/assets/dashboard.png",
+    "src": "/assets/app/dashboard.png",
     "description": "The dashboard provides users with an overview of recent criminal activities in their vicinity. Users can view statistics, trends, and graphs related to crime data. Additionally, they can customize the dashboard layout to prioritize the information they find most relevant."
   },
   {
     "title": "Figure 6: About",
-    "src": "/assets/about.png",
+    "src": "/assets/app/about.png",
     "description": "This page serves as a vital platform for users to provide feedback, enabling continuous improvement and future enhancements of the application. Through this page, users can share their thoughts, suggestions, and experiences, which are invaluable for refining features, fixing issues, and shaping the application's roadmap."
   }
 ]
