@@ -69,7 +69,7 @@ const Contact = () => {
 
   return (
     <main className="fade-in opacity-0">
-      <Title />
+      {/* <Title /> */}
 
       {/* <h2 className="text-2xl md:text-2xl font-bold mb-4 text-center">
         Not yet done still in progress..

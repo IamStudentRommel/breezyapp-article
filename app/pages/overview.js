@@ -7,13 +7,11 @@ export default function Page() {
   return (
     <main className="fade-in opacity-0">
       <Title />
-      <article className="max-w-4xl mx-auto px-4 md:px-0 mt-10">
+      <article className="max-w-5xl mx-auto px-4 md:px-0 mt-10">
         <Intro />
         <Context />
         <Features />
-        <div className="flex justify-center">
-          <Footer />
-        </div>
+        <Footer />
       </article>
     </main>
   );

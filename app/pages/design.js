@@ -30,7 +30,7 @@ export default function Design() {
   };
   return (
     <main className="fade-in opacity-0">
-      <Title />
+      {/* <Title /> */}
       <div className="max-w-4xl mx-auto px-4 md:px-0 mt-5 ">
         <h2 className="text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4">
           Mobile Application (User Interface)
