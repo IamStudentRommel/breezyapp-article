@@ -38,7 +38,7 @@ export default function Design() {
         <div className="max-w-md mx-auto">
           <div className="relative">
             <img
-              className={`max-h-96 h-auto w-auto mx-auto block mb-5 mt-5 rounded-3xl ${
+              className={`max-h-96 h-auto w-auto mx-auto block mb-5 mt-5 rounded-3xl   ${
                 isEnlarged ? "max-h-full" : ""
               }`}
               src={imagesData[currentSlide].src}
