@@ -4,6 +4,7 @@ export default function Intro() {
       <h2 className="text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4 mb-2">
         Introduction
       </h2>
+
       <p className="text-md mb-4 ">
         We are currently in the process of developing the Crime Alert mobile
         application, aiming to provide users with updates on criminal activities
