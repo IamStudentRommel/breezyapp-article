@@ -78,9 +78,10 @@ export default function Design() {
         <h2 className="text-xl mt-4 md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4">
           Web Application (Detailed Report Viewer)
         </h2>
-        <h2 className="text-2xl md:text-2xl mt-2 font-bold text-center">
+        {/* <h2 className="text-2xl md:text-2xl mt-2 font-bold text-center">
           Not yet done, still on progress..
-        </h2>
+        </h2> */}
+        <img src="/assets/app/web.png" alt="Web UI" className="mx-auto mt-5" />
         <br />
         <h2 className="text-xl mt-4 md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4">
           Backend (API)
