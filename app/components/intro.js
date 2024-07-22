@@ -26,7 +26,7 @@ function useWindowSize() {
 }
 
 export default function Intro() {
-  const apkUrl = "https://expo.dev/artifacts/eas/q8dejFwtUJQyJZERiTNjZR.apk";
+  const apkUrl = "https://expo.dev/artifacts/eas/qvMTGsHv5kjXeBgX4ZAsu3.apk";
   const { width } = useWindowSize();
   const qrCodeSize = width >= 768 ? 180 : 380;
 
