@@ -28,7 +28,7 @@ function useWindowSize() {
 export default function Intro() {
   const apkUrl = "https://expo.dev/artifacts/eas/q8dejFwtUJQyJZERiTNjZR.apk";
   const { width } = useWindowSize();
-  const qrCodeSize = width >= 768 ? 180 : 400;
+  const qrCodeSize = width >= 768 ? 180 : 380;
 
   return (
     <main className="flex flex-col md:flex-row">
