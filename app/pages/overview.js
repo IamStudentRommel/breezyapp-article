@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <main className="fade-in opacity-0">
       <Title />
-      <article className="max-w-5xl mx-auto px-4 md:px-0 mt-10 relative">
+      <article className="max-w-5xl mx-auto px-4 md:px-0 mt-0 relative">
         <div className="flex flex-col justify-center items-center mb-3">
           <img
             src="/assets/mel.png"

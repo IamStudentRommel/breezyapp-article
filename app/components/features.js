@@ -14,7 +14,7 @@ export default function Features() {
         <li className="text-md">Integration with law enforcement databases</li>
       </ul>
 
-      <h2 className="text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4">
+      <h2 className="text-xl md:text-xl bg-gradient-to-r from-blue-950 to-white text-white py-2 px-4 mb-2">
         How It Works
       </h2>
       <p className="text-md mb-4">
