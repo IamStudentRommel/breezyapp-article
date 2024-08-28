@@ -26,7 +26,10 @@ function useWindowSize() {
 }
 
 export default function Intro() {
-  const apkUrl = "https://expo.dev/artifacts/eas/qvMTGsHv5kjXeBgX4ZAsu3.apk";
+  // const apkUrl = "https://expo.dev/artifacts/eas/qvMTGsHv5kjXeBgX4ZAsu3.apk";
+  const apkUrl = `${
+    typeof window !== "undefined" ? window.location.origin : ""
+  }/assets/apk/crime_app_capstone.apk`;
   const { width } = useWindowSize();
   const qrCodeSize = width >= 768 ? 180 : 380;
 
@@ -56,13 +59,19 @@ export default function Intro() {
         </p>
       </div>
 
-      <div className="flex-1 flex items-center justify-center p-4">
+      <div className="flex-1 flex items-center justify-center p-2">
         <div className="text-center bg-white border-4 border-blue-300 p-6 rounded-lg shadow-lg">
-          <p className="text-sm mb-4  text-black">
+          <p className="text-sm mb-2  text-black">
             Scan the QR code below to download the Amazing Crime App.
           </p>
 
           <QRCode value={apkUrl} size={qrCodeSize} />
+          <p className="text-sm  mt-2 text-blue-500 font-semibold">
+            Or{" "}
+            <a href={apkUrl} download="crime_app_capstone.apk">
+              click here to download
+            </a>
+          </p>
         </div>
       </div>
     </main>
